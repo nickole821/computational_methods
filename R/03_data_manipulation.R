@@ -23,19 +23,19 @@ files_path <- list.files(path = "data/raw/cestes",
 files_path
 
 # The `files_path` object is a vector of five elements (after all, there are five files) containing the full name of the file. Let's use the contents of this vector in the `read.csv()` function. We will use the a loop to read all data at once.
-file_names <- gsub(".csv", "", basename(files_path), fixed = TRUE)
+file_names <- gsub(".csv", "", basename(files_path), fixed = TRUE) #não entendi
 
 for (i in 1:length(files_path)) {
   data <- read.csv(files_path[[i]])
   assign(file_names[i], data)
-}
+} #isso é um looping. preciso perguntar o que é isso
 
 
 # Let's apply the `head()`, `dim()` and `summary()` functions to inspect all files. Try to understand based on the output and the help page (e.g.: `?head`) what each of the functions returns.
 
 # Understanding the object `comm`
 head(comm)
-dim(comm)
+dim(comm) #diz o número de linhas e colunas da tabela
 summary(comm)
 
 # Understanding the object `coord`
@@ -61,7 +61,7 @@ summary(traits)
 # Data summary
 
 # How many species in the dataset? We can simply count the number of rows in `splist`.
-nrow(splist)
+nrow(splist) #por que a 'legenda' da tabela não é lida? como faz isso?
 
 # How many areas sampled? We can count the number of lines of `comm` or `envir` objects.
 nrow(comm)
@@ -76,7 +76,7 @@ length(names(envir)[-1])
 # Joining different tables through common identifiers ----
 
 # Let's use the `merge()` function from the __base__ package to add the coordinate column to the object containing the environmental variables. This function will combine two worksheets through a common identifier, which is the primary key. In the case of the `envir` object, the primary key is the `Sites` column that contains the number of the sampled locations. We can call this column using the `$` operator.
-envir$Sites
+envir$Sites #aqui estou vendo somente os valores na coluna sites da tabela envir
 
 # There are 97 areas. Let's see what happens when we use the `summary()` function.
 summary(envir$Sites)
@@ -86,11 +86,14 @@ summary(envir$Sites)
 # In R, the `Sites` column that represents a categorical variable with the id of each area is being understood as a numeric variable. Let's convert this column to a factor, this way it will better represent the meaning of the variable which is simply the id of each area. For this we use the `factor()` function
 
 # if we get the class of this vector, we will see that it is numeric
-class(envir$Sites)
+class(envir$Sites) #aqui o resultado é integer. pq?
+
 # we want it to be a categorical variable. For this, we convert into a factor
 as.factor(envir$Sites)
+
 # if we just use as.factor, we don't do the conversion, let's do an assignment
 envir$Sites <- as.factor(envir$Sites)
+class(envir$Sites) #para checar que mudou
 
 # Let's do the same for the `Sites` variable of the `coord` object.
 coord$Sites <- as.factor(coord$Sites)

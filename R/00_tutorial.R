@@ -4,6 +4,9 @@
 library()
 
 # Adicionar os dados que serão lidos no script
+setwd("~/Nicole/Formação de Biologia e Ecologia Quantitativas/Computational methods/2022_scientific_computing_intro-main")
+
+read.csv()
 input_file <- "data/nomedodocumento"
 output_file <- "data/results"
 
