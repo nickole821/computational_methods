@@ -1,3 +1,10 @@
+# --------------------------------------------------#
+# Scientific computing
+# ICTP/Serrapilheira 2022
+# Biodiversity
+# --------------------------------------------------#
+
+
 install.packages("rgbif")
 install.packages("Taxonstand")
 install.packages("CoordinateCleaner")

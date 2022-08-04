@@ -1,5 +1,8 @@
-### Spatial data ###
-
+# --------------------------------------------------#
+# Scientific computing
+# ICTP/Serrapilheira 2022
+# Spatial data
+# --------------------------------------------------#
 
 library(sf)
 library(raster)

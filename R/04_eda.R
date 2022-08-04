@@ -48,7 +48,6 @@ sd01
 sd02
 sd01 == sd02
 
-
 cv <- function(x){
   sd(x) / mean(x) * 100
 }
