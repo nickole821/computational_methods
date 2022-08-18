@@ -1,7 +1,7 @@
 # --------------------------------------------------#
 # Scientific computing
 # ICTP/Serrapilheira 2022
-# Inplementing glm and glmm in R
+# Implementing glm and glmm in R
 # First version 2022-07-20
 # --------------------------------------------------#
 

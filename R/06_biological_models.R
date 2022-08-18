@@ -1,3 +1,9 @@
+# --------------------------------------------------#
+# Scientific computing
+# ICTP/Serrapilheira 2022
+# Models in R
+# --------------------------------------------------#
+
 library(deSolve)
 library(ggplot2) # because we will plot things
 library(tidyr) # because we will manipulate some data

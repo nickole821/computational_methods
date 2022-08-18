@@ -1,3 +1,4 @@
+# --------------------------------------------------#
 # Script to manipulate data in relational data bases ---#
 # part of Scientific Computing course ICTP/Serrapilheira
 # original data from Jeliazkov et al 2020 Sci Data

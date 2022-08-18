@@ -1,3 +1,9 @@
+# --------------------------------------------------#
+# Scientific computing
+# ICTP/Serrapilheira 2022
+# Tutorial inicial
+# --------------------------------------------------#
+
 # Adicionar uma descrição do script: who, how, where and why
 
 # Adicionar os pacotes que vão ser usados

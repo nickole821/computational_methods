@@ -1,6 +1,8 @@
+# --------------------------------------------------#
 # Scientific programming course ICTP-Serrapilheira July-2022
 # Class #03: Scientific workflows
 # Reading raw data, writing processed data, functions of apply family, for loop, writing outputs: tables and figs
+# --------------------------------------------------#
 
 # Reading data -----------------------------------------------------------------
 

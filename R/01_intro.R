@@ -1,6 +1,8 @@
+# --------------------------------------------------#
 # Scientific programming course ICTP-Serrapilheira July-2022
 # Class #01: Introduction to R
 # Introductory script to play with R data types
+# --------------------------------------------------#
 
 # See where you are working at
 getwd()
